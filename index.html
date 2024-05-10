@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Google Search Practice.">
+  <meta name="keywords" content="google, Search, Results">
+	<title>Google Search</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/default.css">
+	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<div class="search-wrap">
+		<div class="search-c-can">
+			<form action="">
+				<div class="google-icon">
+					<a href="google.com">
+						<img src="/Google_2015_logo.svg.png" alt="google-logo">
+					</a>
+				</div>
+
+				<ul class="search-icons">
+					<li>
+						<textarea name="" id="" rows="1" placeholder="google search results page"></textarea>
+					</li>
+					<li class="x">
+						<i class="fa-solid fa-x"></i>
+					</li>
+					<li class="mirco">
+						<i class="fa-solid fa-microphone"></i>
+					</li>
+					<li class="camera">
+						<i class="fa-solid fa-camera"></i>
+					</li>
+					<li class="search-btn">
+						<button>
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</li>
+				</ul>
+			</form>
+			<ul class="search-right">
+				<li class="dots">
+					<i class="fa-solid fa-braille"></i>
+				</li>
+				<li class="user">
+					<i class="fa-solid fa-user"></i>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<nav class="flex">
+		<div class="col flex">
+			<div class="top flex">
+				<ul class="flex">
+					<li>
+						<a class="gray-a" href="#">All</a>
+					</li>
+					<li>
+						<a class="gray-a" href="#">Images</a>
+					</li>
+					<li>
+						<a class="gray-a" href="#">News</a>
+					</li>
+					<li>
+						<a class="gray-a" href="#">Videos</a>
+					</li>
+					<li>
+						<a class="gray-a" href="#">Forms</a>
+					</li>
+					<li>
+						<a class="gray-a" href="#">: More</a>
+					</li>
+				</ul>
+				<div>
+					<a class="gray-a" href="#">Tools</a>
+				</div>
+			</div>
+			<div>
+				<ul class="flex">
+					<li class="bubble">
+						<a class="bubble-word" href="#">Page Layout</a>
+					</li>
+					<li class="bubble">
+						<a class="bubble-word" href="#">Meaning</a>
+					</li>
+					<li class="bubble">
+						<a class="bubble-word" href="#">Android</a>
+					</li>
+					<li class="bubble">
+						<a class="bubble-word" href="#">Explained</a>
+					</li>
+					<li class="bubble">
+						<a class="bubble-word" href="#">Q1</a>
+					</li>
+					<li class="bubble">
+						<a class="bubble-word" href="#">Design</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<Select class="safe-search">
+				<option value="Filter">Filter Explicit Results</option>
+				<option value="Blur">Blur Explicit Results</option>
+				<option value="Off">Off</option>
+				<option value="Safe" selected disabled>SafeSearch</option>
+				<option value="option">
+					<a href="#">More about SafeSearch</a>
+				</option>
+			</Select>
+		</div>
+	</nav>
+
+	<div style="min-height: 20px;"></div>
+
+	<section class="content">
+		<div class="flex">
+			<span class="img-wrap">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADmUlEQVR4Ab1XA5AjQRQ9G6UrnV0627Zt27Zt27Zt27Z9FyeXiZN3v1NzW9vTmd3J6lW9cKbf6690EmlFIBDIQGzr9/vXE+8RjUSPTIP82Xq6pg27VvPCGoTz08KbiE5oBF3rIG6ge/PGWBhAGlpkAdEHzRCMeInzyEjqcHedj258gbgBM/KU1syjVbwo3aBHCPh+foe0YyMsw/vC0KI2dDVLQ1ejFAzNasI8tDekLWvh+/5VzYQOQGENOxfFfb9+wDplNHTVS0JXrUTUpGusk0aye0Ka4CPBi6cNFXbn2RPQ16vIi2igvn4luC6dVUuHWBOs4KCAtGtzOKICbXOnqKVjbqhW8yl2rrqwqUcb2Nctg/P4QThPHKLXy2Hq2ZYXXzgTCARUu4NLBetzZbHp61YQhI3tG8N9/zbU4L53C4bW9fF3+XwtnbH+f79nVA4Z++IBgri5fxcEbDZEh4Bk19qaEkUhPQt/W24Bxwd4z6SEdVSOCHHWcn6LCXEN0m7Fwr+ec/ZpJrznkwcpLcsEfZ3icJ4+hvgAaa9hBu5x+X9Qk4lH0H0wJ+D1xpeB28yAEZHgvZqFM+B71gZRoeoMu2ZeeuEVBhMz4OEMXEjJGfC/nxBnBnbc8CgNuBPUwKYr7pAGDFGm4GnrODOw97YQAZ1YhA9rcQa+Xy0Ij9+LcPFR5xcMXHnlFYtQbMPZEeLHTuRE+d2NcfjDeYSL3bc8goFfloDYhuwMxw+iT3CcT42Zh4uh+O5mQdY83BUGpxla8dcZQPPFEifeeY0j1CBqGTxskhPu20W3pjJhju3PjIDFHf0o9viAUbucwu73iPmXAKT7/2O0AZHw065Dxf3tBBP1j/bC1R/3oYa35s/odmQ3CVo5cRYNh1sI/9rIP8d5/X6+0k59vioLi2x+ciAWPNyEvW9PYd+701jxdAe6nx+HErubB78vtXkUqsz5FmHg2mufUtxDmrmVB5J5UGDb6yOCuFaW2NEZFRfeFXpfNjBL7Rj+DAqc+XKd0tE+bAOl9rTEuqdHQok/BpBK7VyYRz69cvgl6THu5iKU3NNck3ivixPxyvQhlPhvALmi+0NSmDfBF+eWV4fQ//JU1DnSA6X3tmQ7pTbthh4XJgRr4bXpI2QI4rTBQurKYiSeIo7Awi7sXIOJ1Oz0SvTGQthDnKWW83CisZ4ohSEsEdfKrRY3YAdIYis2v4m3iTqiW6ZO/mwNG6/yhNOEf6HhfzYhUKeuAAAAAElFTkSuQmCC" alt="google-cirle">
+			</span>
+			<div>
+				<h4>Google Help
+				</h4>
+				<a class="url" href="#">https://support.google.com › faqs › answer
+					<span class="code">&#8942;</span>
+				</a>
+			</div>
+		</div>
+		<div>
+			<h3>
+				<a href="#">Search Results Page</a>
+			</h3>
+		</div>
+		<div>
+			<p>The search results page contains the results of the search query on the left (or top on smaller screens). Results are sorted by relevance by default, ...</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="flex">
+			<span class="img-wrap">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADmUlEQVR4Ab1XA5AjQRQ9G6UrnV0627Zt27Zt27Zt27Z9FyeXiZN3v1NzW9vTmd3J6lW9cKbf6690EmlFIBDIQGzr9/vXE+8RjUSPTIP82Xq6pg27VvPCGoTz08KbiE5oBF3rIG6ge/PGWBhAGlpkAdEHzRCMeInzyEjqcHedj258gbgBM/KU1syjVbwo3aBHCPh+foe0YyMsw/vC0KI2dDVLQ1ejFAzNasI8tDekLWvh+/5VzYQOQGENOxfFfb9+wDplNHTVS0JXrUTUpGusk0aye0Ka4CPBi6cNFXbn2RPQ16vIi2igvn4luC6dVUuHWBOs4KCAtGtzOKICbXOnqKVjbqhW8yl2rrqwqUcb2Nctg/P4QThPHKLXy2Hq2ZYXXzgTCARUu4NLBetzZbHp61YQhI3tG8N9/zbU4L53C4bW9fF3+XwtnbH+f79nVA4Z++IBgri5fxcEbDZEh4Bk19qaEkUhPQt/W24Bxwd4z6SEdVSOCHHWcn6LCXEN0m7Fwr+ec/ZpJrznkwcpLcsEfZ3icJ4+hvgAaa9hBu5x+X9Qk4lH0H0wJ+D1xpeB28yAEZHgvZqFM+B71gZRoeoMu2ZeeuEVBhMz4OEMXEjJGfC/nxBnBnbc8CgNuBPUwKYr7pAGDFGm4GnrODOw97YQAZ1YhA9rcQa+Xy0Ij9+LcPFR5xcMXHnlFYtQbMPZEeLHTuRE+d2NcfjDeYSL3bc8goFfloDYhuwMxw+iT3CcT42Zh4uh+O5mQdY83BUGpxla8dcZQPPFEifeeY0j1CBqGTxskhPu20W3pjJhju3PjIDFHf0o9viAUbucwu73iPmXAKT7/2O0AZHw065Dxf3tBBP1j/bC1R/3oYa35s/odmQ3CVo5cRYNh1sI/9rIP8d5/X6+0k59vioLi2x+ciAWPNyEvW9PYd+701jxdAe6nx+HErubB78vtXkUqsz5FmHg2mufUtxDmrmVB5J5UGDb6yOCuFaW2NEZFRfeFXpfNjBL7Rj+DAqc+XKd0tE+bAOl9rTEuqdHQok/BpBK7VyYRz69cvgl6THu5iKU3NNck3ivixPxyvQhlPhvALmi+0NSmDfBF+eWV4fQ//JU1DnSA6X3tmQ7pTbthh4XJgRr4bXpI2QI4rTBQurKYiSeIo7Awi7sXIOJ1Oz0SvTGQthDnKWW83CisZ4ohSEsEdfKrRY3YAdIYis2v4m3iTqiW6ZO/mwNG6/yhNOEf6HhfzYhUKeuAAAAAElFTkSuQmCC" alt="google-cirle">
+			</span>
+			<div>
+				<h4>Google Help
+				</h4>
+				<a class="url" href="#">https://www.google.com › search › ranking-results
+					<span class="code">&#8942;</span>
+				</a>
+			</div>
+		</div>
+		<div>
+			<h3>
+				<a href="#">Ranking Results – How Google Search Works</a>
+			</h3>
+		</div>
+		<div>
+			<p>Google's ranking systems are designed to do just that: sort through hundreds of billions of webpages and other content in our Search index to present the most ...</p>
+		</div>
+	</section>
+
+	<section class="content also">
+		<div>
+			<h2>People Also Ask
+				<span class="code">&#8942;</span>
+			</h2>
+		</div>
+		<div class="questions">
+			<h3>How Do I Get Search Results Page?</h3>
+			<span class="arrow">
+				<i class="fa-solid fa-chevron-down"></i>
+			</span>
+		</div>
+		<div class="questions">
+			<h3>How Does Google Know What To Show?</h3>
+			<span class="arrow margin-1">
+				<i class="fa-solid fa-chevron-down"></i>
+			</span>
+		</div>
+		<div class="questions">
+			<h3>How Do I Search Google For Specific Results?</h3>
+			<span class="arrow margin-2">
+				<i class="fa-solid fa-chevron-down"></i>
+			</span>
+		</div>
+		<div class="questions">
+			<h3>What Is The Search Results Page?</h3>
+			<span class="arrow margin-3">
+				<i class="fa-solid fa-chevron-down"></i>
+			</span>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="flex">
+			<span class="img-wrap">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADmUlEQVR4Ab1XA5AjQRQ9G6UrnV0627Zt27Zt27Zt27Z9FyeXiZN3v1NzW9vTmd3J6lW9cKbf6690EmlFIBDIQGzr9/vXE+8RjUSPTIP82Xq6pg27VvPCGoTz08KbiE5oBF3rIG6ge/PGWBhAGlpkAdEHzRCMeInzyEjqcHedj258gbgBM/KU1syjVbwo3aBHCPh+foe0YyMsw/vC0KI2dDVLQ1ejFAzNasI8tDekLWvh+/5VzYQOQGENOxfFfb9+wDplNHTVS0JXrUTUpGusk0aye0Ka4CPBi6cNFXbn2RPQ16vIi2igvn4luC6dVUuHWBOs4KCAtGtzOKICbXOnqKVjbqhW8yl2rrqwqUcb2Nctg/P4QThPHKLXy2Hq2ZYXXzgTCARUu4NLBetzZbHp61YQhI3tG8N9/zbU4L53C4bW9fF3+XwtnbH+f79nVA4Z++IBgri5fxcEbDZEh4Bk19qaEkUhPQt/W24Bxwd4z6SEdVSOCHHWcn6LCXEN0m7Fwr+ec/ZpJrznkwcpLcsEfZ3icJ4+hvgAaa9hBu5x+X9Qk4lH0H0wJ+D1xpeB28yAEZHgvZqFM+B71gZRoeoMu2ZeeuEVBhMz4OEMXEjJGfC/nxBnBnbc8CgNuBPUwKYr7pAGDFGm4GnrODOw97YQAZ1YhA9rcQa+Xy0Ij9+LcPFR5xcMXHnlFYtQbMPZEeLHTuRE+d2NcfjDeYSL3bc8goFfloDYhuwMxw+iT3CcT42Zh4uh+O5mQdY83BUGpxla8dcZQPPFEifeeY0j1CBqGTxskhPu20W3pjJhju3PjIDFHf0o9viAUbucwu73iPmXAKT7/2O0AZHw065Dxf3tBBP1j/bC1R/3oYa35s/odmQ3CVo5cRYNh1sI/9rIP8d5/X6+0k59vioLi2x+ciAWPNyEvW9PYd+701jxdAe6nx+HErubB78vtXkUqsz5FmHg2mufUtxDmrmVB5J5UGDb6yOCuFaW2NEZFRfeFXpfNjBL7Rj+DAqc+XKd0tE+bAOl9rTEuqdHQok/BpBK7VyYRz69cvgl6THu5iKU3NNck3ivixPxyvQhlPhvALmi+0NSmDfBF+eWV4fQ//JU1DnSA6X3tmQ7pTbthh4XJgRr4bXpI2QI4rTBQurKYiSeIo7Awi7sXIOJ1Oz0SvTGQthDnKWW83CisZ4ohSEsEdfKrRY3YAdIYis2v4m3iTqiW6ZO/mwNG6/yhNOEf6HhfzYhUKeuAAAAAElFTkSuQmCC" alt="google-cirle">
+			</span>
+			<div>
+				<h4>Google Help
+				</h4>
+				<a class="url" href="#">https://support.google.com › websearch › answer
+					<span class="code">&#8942;</span>
+				</a>
+			</div>
+		</div>
+		<div>
+			<h3>
+				<a href="#">Find more search results on Google </a>
+			</h3>
+		</div>
+		<div>
+			<p>To find more web results, click Next or More Results at the bottom of the search results page. Search without omitted results. If you reach the end of the ...</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="flex">
+			<span class="img-wrap">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADmUlEQVR4Ab1XA5AjQRQ9G6UrnV0627Zt27Zt27Zt27Z9FyeXiZN3v1NzW9vTmd3J6lW9cKbf6690EmlFIBDIQGzr9/vXE+8RjUSPTIP82Xq6pg27VvPCGoTz08KbiE5oBF3rIG6ge/PGWBhAGlpkAdEHzRCMeInzyEjqcHedj258gbgBM/KU1syjVbwo3aBHCPh+foe0YyMsw/vC0KI2dDVLQ1ejFAzNasI8tDekLWvh+/5VzYQOQGENOxfFfb9+wDplNHTVS0JXrUTUpGusk0aye0Ka4CPBi6cNFXbn2RPQ16vIi2igvn4luC6dVUuHWBOs4KCAtGtzOKICbXOnqKVjbqhW8yl2rrqwqUcb2Nctg/P4QThPHKLXy2Hq2ZYXXzgTCARUu4NLBetzZbHp61YQhI3tG8N9/zbU4L53C4bW9fF3+XwtnbH+f79nVA4Z++IBgri5fxcEbDZEh4Bk19qaEkUhPQt/W24Bxwd4z6SEdVSOCHHWcn6LCXEN0m7Fwr+ec/ZpJrznkwcpLcsEfZ3icJ4+hvgAaa9hBu5x+X9Qk4lH0H0wJ+D1xpeB28yAEZHgvZqFM+B71gZRoeoMu2ZeeuEVBhMz4OEMXEjJGfC/nxBnBnbc8CgNuBPUwKYr7pAGDFGm4GnrODOw97YQAZ1YhA9rcQa+Xy0Ij9+LcPFR5xcMXHnlFYtQbMPZEeLHTuRE+d2NcfjDeYSL3bc8goFfloDYhuwMxw+iT3CcT42Zh4uh+O5mQdY83BUGpxla8dcZQPPFEifeeY0j1CBqGTxskhPu20W3pjJhju3PjIDFHf0o9viAUbucwu73iPmXAKT7/2O0AZHw065Dxf3tBBP1j/bC1R/3oYa35s/odmQ3CVo5cRYNh1sI/9rIP8d5/X6+0k59vioLi2x+ciAWPNyEvW9PYd+701jxdAe6nx+HErubB78vtXkUqsz5FmHg2mufUtxDmrmVB5J5UGDb6yOCuFaW2NEZFRfeFXpfNjBL7Rj+DAqc+XKd0tE+bAOl9rTEuqdHQok/BpBK7VyYRz69cvgl6THu5iKU3NNck3ivixPxyvQhlPhvALmi+0NSmDfBF+eWV4fQ//JU1DnSA6X3tmQ7pTbthh4XJgRr4bXpI2QI4rTBQurKYiSeIo7Awi7sXIOJ1Oz0SvTGQthDnKWW83CisZ4ohSEsEdfKrRY3YAdIYis2v4m3iTqiW6ZO/mwNG6/yhNOEf6HhfzYhUKeuAAAAAElFTkSuQmCC" alt="google-cirle">
+			</span>
+			<div>
+				<h4>Google for Developers
+				</h4>
+				<a class="url" href="#">https://developers.google.com › ... › Documentation
+					<span class="code">&#8942;</span>
+				</a>
+			</div>
+		</div>
+		<div>
+			<h3>
+				<a href="#">Visual Elements Gallery of Google Search</a>
+			</h3>
+		</div>
+		<div>
+			<p>The Google Search results page contains a set of different types of search result visual elements, and each search result has its own set of possible child ...</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="flex">
+			<span class="img-wrap">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADmUlEQVR4Ab1XA5AjQRQ9G6UrnV0627Zt27Zt27Zt27Z9FyeXiZN3v1NzW9vTmd3J6lW9cKbf6690EmlFIBDIQGzr9/vXE+8RjUSPTIP82Xq6pg27VvPCGoTz08KbiE5oBF3rIG6ge/PGWBhAGlpkAdEHzRCMeInzyEjqcHedj258gbgBM/KU1syjVbwo3aBHCPh+foe0YyMsw/vC0KI2dDVLQ1ejFAzNasI8tDekLWvh+/5VzYQOQGENOxfFfb9+wDplNHTVS0JXrUTUpGusk0aye0Ka4CPBi6cNFXbn2RPQ16vIi2igvn4luC6dVUuHWBOs4KCAtGtzOKICbXOnqKVjbqhW8yl2rrqwqUcb2Nctg/P4QThPHKLXy2Hq2ZYXXzgTCARUu4NLBetzZbHp61YQhI3tG8N9/zbU4L53C4bW9fF3+XwtnbH+f79nVA4Z++IBgri5fxcEbDZEh4Bk19qaEkUhPQt/W24Bxwd4z6SEdVSOCHHWcn6LCXEN0m7Fwr+ec/ZpJrznkwcpLcsEfZ3icJ4+hvgAaa9hBu5x+X9Qk4lH0H0wJ+D1xpeB28yAEZHgvZqFM+B71gZRoeoMu2ZeeuEVBhMz4OEMXEjJGfC/nxBnBnbc8CgNuBPUwKYr7pAGDFGm4GnrODOw97YQAZ1YhA9rcQa+Xy0Ij9+LcPFR5xcMXHnlFYtQbMPZEeLHTuRE+d2NcfjDeYSL3bc8goFfloDYhuwMxw+iT3CcT42Zh4uh+O5mQdY83BUGpxla8dcZQPPFEifeeY0j1CBqGTxskhPu20W3pjJhju3PjIDFHf0o9viAUbucwu73iPmXAKT7/2O0AZHw065Dxf3tBBP1j/bC1R/3oYa35s/odmQ3CVo5cRYNh1sI/9rIP8d5/X6+0k59vioLi2x+ciAWPNyEvW9PYd+701jxdAe6nx+HErubB78vtXkUqsz5FmHg2mufUtxDmrmVB5J5UGDb6yOCuFaW2NEZFRfeFXpfNjBL7Rj+DAqc+XKd0tE+bAOl9rTEuqdHQok/BpBK7VyYRz69cvgl6THu5iKU3NNck3ivixPxyvQhlPhvALmi+0NSmDfBF+eWV4fQ//JU1DnSA6X3tmQ7pTbthh4XJgRr4bXpI2QI4rTBQurKYiSeIo7Awi7sXIOJ1Oz0SvTGQthDnKWW83CisZ4ohSEsEdfKrRY3YAdIYis2v4m3iTqiW6ZO/mwNG6/yhNOEf6HhfzYhUKeuAAAAAElFTkSuQmCC" alt="google-cirle">
+			</span>
+			<div>
+				<h4>Google For Education
+				</h4>
+				<a class="url" href="#">https://edu.google.com › pswg › assets › notes › Lesson2.4
+					<span class="code">&#8942;</span>
+				</a>
+			</div>
+		</div>
+		<div>
+			<h3>
+				<a href="#">Lesson 2.4: Reading the Search Engine Results Page (Text)</a>
+			</h3>
+		</div>
+		<div>
+			<p>Lesson 2.4: Reading the Search Results Page. Access Lesson 2.4 slides here. Contents: Previewing pages; Understanding an individual search result ...</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="flex">
+			<span class="img-wrap">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADmUlEQVR4Ab1XA5AjQRQ9G6UrnV0627Zt27Zt27Zt27Z9FyeXiZN3v1NzW9vTmd3J6lW9cKbf6690EmlFIBDIQGzr9/vXE+8RjUSPTIP82Xq6pg27VvPCGoTz08KbiE5oBF3rIG6ge/PGWBhAGlpkAdEHzRCMeInzyEjqcHedj258gbgBM/KU1syjVbwo3aBHCPh+foe0YyMsw/vC0KI2dDVLQ1ejFAzNasI8tDekLWvh+/5VzYQOQGENOxfFfb9+wDplNHTVS0JXrUTUpGusk0aye0Ka4CPBi6cNFXbn2RPQ16vIi2igvn4luC6dVUuHWBOs4KCAtGtzOKICbXOnqKVjbqhW8yl2rrqwqUcb2Nctg/P4QThPHKLXy2Hq2ZYXXzgTCARUu4NLBetzZbHp61YQhI3tG8N9/zbU4L53C4bW9fF3+XwtnbH+f79nVA4Z++IBgri5fxcEbDZEh4Bk19qaEkUhPQt/W24Bxwd4z6SEdVSOCHHWcn6LCXEN0m7Fwr+ec/ZpJrznkwcpLcsEfZ3icJ4+hvgAaa9hBu5x+X9Qk4lH0H0wJ+D1xpeB28yAEZHgvZqFM+B71gZRoeoMu2ZeeuEVBhMz4OEMXEjJGfC/nxBnBnbc8CgNuBPUwKYr7pAGDFGm4GnrODOw97YQAZ1YhA9rcQa+Xy0Ij9+LcPFR5xcMXHnlFYtQbMPZEeLHTuRE+d2NcfjDeYSL3bc8goFfloDYhuwMxw+iT3CcT42Zh4uh+O5mQdY83BUGpxla8dcZQPPFEifeeY0j1CBqGTxskhPu20W3pjJhju3PjIDFHf0o9viAUbucwu73iPmXAKT7/2O0AZHw065Dxf3tBBP1j/bC1R/3oYa35s/odmQ3CVo5cRYNh1sI/9rIP8d5/X6+0k59vioLi2x+ciAWPNyEvW9PYd+701jxdAe6nx+HErubB78vtXkUqsz5FmHg2mufUtxDmrmVB5J5UGDb6yOCuFaW2NEZFRfeFXpfNjBL7Rj+DAqc+XKd0tE+bAOl9rTEuqdHQok/BpBK7VyYRz69cvgl6THu5iKU3NNck3ivixPxyvQhlPhvALmi+0NSmDfBF+eWV4fQ//JU1DnSA6X3tmQ7pTbthh4XJgRr4bXpI2QI4rTBQurKYiSeIo7Awi7sXIOJ1Oz0SvTGQthDnKWW83CisZ4ohSEsEdfKrRY3YAdIYis2v4m3iTqiW6ZO/mwNG6/yhNOEf6HhfzYhUKeuAAAAAElFTkSuQmCC" alt="google-cirle">
+			</span>
+			<div>
+				<h4>Google Trends
+				</h4>
+				<a class="url" href="#">https://trends.google.com › Trends
+					<span class="code">&#8942;</span>
+				</a>
+			</div>
+		</div>
+		<div>
+			<h3>
+				<a href="#">Search Trends</a>
+			</h3>
+		</div>
+		<div>
+			<p>Explore issues and events in detail. Curated by the Trends Data Team. Year in Search 2023. Explore the year ...</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="flex">
+			<span class="img-wrap">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADmUlEQVR4Ab1XA5AjQRQ9G6UrnV0627Zt27Zt27Zt27Z9FyeXiZN3v1NzW9vTmd3J6lW9cKbf6690EmlFIBDIQGzr9/vXE+8RjUSPTIP82Xq6pg27VvPCGoTz08KbiE5oBF3rIG6ge/PGWBhAGlpkAdEHzRCMeInzyEjqcHedj258gbgBM/KU1syjVbwo3aBHCPh+foe0YyMsw/vC0KI2dDVLQ1ejFAzNasI8tDekLWvh+/5VzYQOQGENOxfFfb9+wDplNHTVS0JXrUTUpGusk0aye0Ka4CPBi6cNFXbn2RPQ16vIi2igvn4luC6dVUuHWBOs4KCAtGtzOKICbXOnqKVjbqhW8yl2rrqwqUcb2Nctg/P4QThPHKLXy2Hq2ZYXXzgTCARUu4NLBetzZbHp61YQhI3tG8N9/zbU4L53C4bW9fF3+XwtnbH+f79nVA4Z++IBgri5fxcEbDZEh4Bk19qaEkUhPQt/W24Bxwd4z6SEdVSOCHHWcn6LCXEN0m7Fwr+ec/ZpJrznkwcpLcsEfZ3icJ4+hvgAaa9hBu5x+X9Qk4lH0H0wJ+D1xpeB28yAEZHgvZqFM+B71gZRoeoMu2ZeeuEVBhMz4OEMXEjJGfC/nxBnBnbc8CgNuBPUwKYr7pAGDFGm4GnrODOw97YQAZ1YhA9rcQa+Xy0Ij9+LcPFR5xcMXHnlFYtQbMPZEeLHTuRE+d2NcfjDeYSL3bc8goFfloDYhuwMxw+iT3CcT42Zh4uh+O5mQdY83BUGpxla8dcZQPPFEifeeY0j1CBqGTxskhPu20W3pjJhju3PjIDFHf0o9viAUbucwu73iPmXAKT7/2O0AZHw065Dxf3tBBP1j/bC1R/3oYa35s/odmQ3CVo5cRYNh1sI/9rIP8d5/X6+0k59vioLi2x+ciAWPNyEvW9PYd+701jxdAe6nx+HErubB78vtXkUqsz5FmHg2mufUtxDmrmVB5J5UGDb6yOCuFaW2NEZFRfeFXpfNjBL7Rj+DAqc+XKd0tE+bAOl9rTEuqdHQok/BpBK7VyYRz69cvgl6THu5iKU3NNck3ivixPxyvQhlPhvALmi+0NSmDfBF+eWV4fQ//JU1DnSA6X3tmQ7pTbthh4XJgRr4bXpI2QI4rTBQurKYiSeIo7Awi7sXIOJ1Oz0SvTGQthDnKWW83CisZ4ohSEsEdfKrRY3YAdIYis2v4m3iTqiW6ZO/mwNG6/yhNOEf6HhfzYhUKeuAAAAAElFTkSuQmCC" alt="google-cirle">
+			</span>
+			<div>
+				<h4>Google Documentation
+				</h4>
+				<a class="url" href="#">https://developers.google.com › ... › Documentation
+					<span class="code">&#8942;</span>
+				</a>
+			</div>
+		</div>
+		<div>
+			<h3>
+				<a href="#">Google Documentation</a>
+			</h3>
+		</div>
+		<div>
+			<p>Your page experience can impact how your site ranks in Search results. Learn how to evaluate your site and deliver a good page experience.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="flex">
+			<span class="img-wrap">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADmUlEQVR4Ab1XA5AjQRQ9G6UrnV0627Zt27Zt27Zt27Z9FyeXiZN3v1NzW9vTmd3J6lW9cKbf6690EmlFIBDIQGzr9/vXE+8RjUSPTIP82Xq6pg27VvPCGoTz08KbiE5oBF3rIG6ge/PGWBhAGlpkAdEHzRCMeInzyEjqcHedj258gbgBM/KU1syjVbwo3aBHCPh+foe0YyMsw/vC0KI2dDVLQ1ejFAzNasI8tDekLWvh+/5VzYQOQGENOxfFfb9+wDplNHTVS0JXrUTUpGusk0aye0Ka4CPBi6cNFXbn2RPQ16vIi2igvn4luC6dVUuHWBOs4KCAtGtzOKICbXOnqKVjbqhW8yl2rrqwqUcb2Nctg/P4QThPHKLXy2Hq2ZYXXzgTCARUu4NLBetzZbHp61YQhI3tG8N9/zbU4L53C4bW9fF3+XwtnbH+f79nVA4Z++IBgri5fxcEbDZEh4Bk19qaEkUhPQt/W24Bxwd4z6SEdVSOCHHWcn6LCXEN0m7Fwr+ec/ZpJrznkwcpLcsEfZ3icJ4+hvgAaa9hBu5x+X9Qk4lH0H0wJ+D1xpeB28yAEZHgvZqFM+B71gZRoeoMu2ZeeuEVBhMz4OEMXEjJGfC/nxBnBnbc8CgNuBPUwKYr7pAGDFGm4GnrODOw97YQAZ1YhA9rcQa+Xy0Ij9+LcPFR5xcMXHnlFYtQbMPZEeLHTuRE+d2NcfjDeYSL3bc8goFfloDYhuwMxw+iT3CcT42Zh4uh+O5mQdY83BUGpxla8dcZQPPFEifeeY0j1CBqGTxskhPu20W3pjJhju3PjIDFHf0o9viAUbucwu73iPmXAKT7/2O0AZHw065Dxf3tBBP1j/bC1R/3oYa35s/odmQ3CVo5cRYNh1sI/9rIP8d5/X6+0k59vioLi2x+ciAWPNyEvW9PYd+701jxdAe6nx+HErubB78vtXkUqsz5FmHg2mufUtxDmrmVB5J5UGDb6yOCuFaW2NEZFRfeFXpfNjBL7Rj+DAqc+XKd0tE+bAOl9rTEuqdHQok/BpBK7VyYRz69cvgl6THu5iKU3NNck3ivixPxyvQhlPhvALmi+0NSmDfBF+eWV4fQ//JU1DnSA6X3tmQ7pTbthh4XJgRr4bXpI2QI4rTBQurKYiSeIo7Awi7sXIOJ1Oz0SvTGQthDnKWW83CisZ4ohSEsEdfKrRY3YAdIYis2v4m3iTqiW6ZO/mwNG6/yhNOEf6HhfzYhUKeuAAAAAElFTkSuQmCC" alt="google-cirle">
+			</span>
+			<div>
+				<h4>IQComputing
+				</h4>
+				<a class="url" href="#">https://www.iqcomputing.com › Support
+					<span class="code">&#8942;</span>
+				</a>
+			</div>
+		</div>
+		<div>
+			<h3>
+				<a href="#">Google Search Results Explained</a>
+			</h3>
+		</div>
+		<div>
+			<p>The search engine results page or SERP are the pages that Google, Bing and other search engines show in response to a users search query.</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="flex">
+			<span class="img-wrap">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAjVBMVEX/4Bv/4hv/5Rv/5hv11xukjxiLeRfkyBr/6BuXhBhfURbKsRnu0RtZTBbDqxk9MxUdFRVFOhbbwBpTRxb/6ht3ZxcAABUSChUiGhVnWRfpzBokHBVOQhY3LhWymxm4oRkWDRVzYxeEcxd+bRcaEhULABWplBjUuhqJeBe+phn/7BuZhhhgUhZtXhcpIBVVb8UJAAABLklEQVR4AbXSV2KEIBAAUAdYHXsfa+zdbO5/vPC3tt8dKzw6KN8PYBzkB56Mi5eqcY4K3hhQN0zLdlTX84OLghI6ESoxJV6aZHgxP+eRQxR6aZGo/GSstBiqP0FVx27aCDhi1AYs6tJ+GMdhoAmPBqaOvKJUAlE5l+yIvASwqCg8WwgLccnhUDHQedQ3RUE5R8bCl4YHdNYtIE+imJcZ16Dc2QfFb7c4pSfnsM35nCtbVX+UBd36zkdZNeAAwLCd4dBuJVbhpkO7CUVoU792x3bDTcuLlEztPb1qK1L6w4CZE9ZxU9CsxbVpORW8j4vERCXnmexbXlWrFQX2eZGiXioFGyLKeWlwOQYZpQX1q1kZZPLbbld/NJKMULuaDAbztO91jvB4woBxziR9N/4BL1MY48JVNNAAAAAASUVORK5CYII=" alt="mailchimp">
+			</span>
+			<div>
+				<h4>Mailchimp
+				</h4>
+				<a class="url" href="#">https://mailchimp.com › marketing-glossary › serp
+					<span class="code">&#8942;</span>
+				</a>
+			</div>
+		</div>
+		<div>
+			<h3>
+				<a href="#">SERP: Search Engine Result Pages Explained</a>
+			</h3>
+		</div>
+		<div>
+			<p>A search engine results page, or SERP, is the page you see after entering a query into Google, Yahoo, or any other search engine. Each search engine's SERP ...</p>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="flex">
+			<span class="img-wrap">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAh1BMVEUZGRkZFhgZFBcaKR8dPyoXAAwsrmQy1HkWAAAZHho6/5Q7/5YgWzgYDBUXAAguums4+I026oUbNiU8/5glgUw8/5onjFIYABIWAAMwy3Q5/5EYDhUeTTEz2nwwxHEhYjwqo14aIxwjckQollc38YkibkIbMCIqpV8ZGRcjcUQ15IIuvm0dQyzYa0hUAAAA7ElEQVR4AY2SRQKDQAxFi4QJDp1OcXe5//XqXuwv8+LJbrs4foEJ4jwFieAc42VF1fQZaJiKZeNM4J6aB3Z0JqHrqTLavsNNsCBkEugaM40JiJES8Ds3pmLwx/SEpXApnKkR/gfaPlyrQcry356cnBVw76u03N/Al8mpWArfgcf3gEjU+nMcDnwbA3gIUf9qtaK2q8XmQ3HyNY0hUYKE0YtURSU/e0BCG5TbtjUOqm38bJCDknbAcU6o+lnwt9raV0Sdl301nLiLk6gWYE8PMHnrgpKBSjPXxkFV558I+xK4OcjX46XRWcrvNusMwJMPG+BiO+QAAAAASUVORK5CYII=" alt="Ardent Growth">
+			</span>
+			<div>
+				<h4>Ardent Growth
+				</h4>
+				<a class="url" href="#">https://ardentgrowth.com › blog › serps
+					<span class="code">&#8942;</span>
+				</a>
+			</div>
+		</div>
+		<div>
+			<h3>
+				<a href="#">Beginner's Guide to Search Engine Results Pages (SERPS)</a>
+			</h3>
+		</div>
+		<div>
+			<p>Apr 26, 2024 — When you search for something on a search engine, like Google, the results are displayed on a page that we call the search engine results page.</p>
+		</div>
+	</section>
+
+	<script src="https://kit.fontawesome.com/bfee64afc7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
